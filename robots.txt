@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Esta página existe solo para cumplir los requisitos de marca de la app OAuth
+# de Google. No necesita aparecer en buscadores ni ser rastreada.
