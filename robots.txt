@@ -1,5 +1,10 @@
+# Esta página existe solo para cumplir los requisitos de marca de la app OAuth de
+# Google (URLs de home, privacidad y términos). No debe aparecer en buscadores.
+#
+# Ojo: NO se bloquea el rastreo a propósito. Si aquí hubiera "Disallow: /", Googlebot
+# no podría leer la etiqueta <meta name="robots" content="noindex"> de las páginas y
+# estas podrían seguir apareciendo en resultados (sin descripción) si algo las enlaza.
+# El noindex del HTML es la instrucción que de verdad las saca del índice; el robots.txt
+# solo lo ven los rastreadores que respetan las reglas.
 User-agent: *
-Disallow: /
-
-# Esta página existe solo para cumplir los requisitos de marca de la app OAuth
-# de Google. No necesita aparecer en buscadores ni ser rastreada.
+Allow: /
